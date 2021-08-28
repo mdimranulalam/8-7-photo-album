@@ -7,16 +7,43 @@
     <title>Photo Album</title>
 
     <!-- google fonts links start from here -->
+    <!-- Hina-Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <!-- Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- google fonts links end here -->
+    <!-- Google Fonts Links End Here -->
 
     <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .fix{
+            overflow: hidden;
+        }
+        .main-heading{
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Hina Mincho', serif;
+            color: rgb(68, 53, 53);
+            padding-top: 30px;
+        }
+        .sub-heading{
+            text-align: center;
+            font-size: 17px;
+            color: rgb(95, 95, 95);
+            font-family: 'Hina Mincho', serif;
+            padding-bottom: 50px;
+        }
         .photo-album{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            padding-bottom: 50px;
         }
         .photo-frame{
             width: 300px;
@@ -36,6 +63,7 @@
             position: absolute;
             top: 0;
             width: 300px;
+            
         }
         .photo-detail h3{
             background-color: black;
@@ -55,13 +83,45 @@
         .photo-frame:hover .photo-detail{
             display: block;
             background-color: rgba(210, 230, 34, 0.37);
+            padding-bottom: 50px;
+            transition: 3s ease;
         }
+
+        /* footer css from here  */
+        .footer{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(31, 5, 41);
+        }
+        .orange-color{
+            color: rgb(255, 174, 0);
+            /* padding-left: 5px; */
+        }
+        .footer h2{
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            letter-spacing: 1px;
+            font-family: 'Hina Mincho', serif;
+            padding-top: 50px;
+        }
+        .footer p{
+            font-size: 17px;
+            text-align: center;
+            color: white;
+            letter-spacing: 1px;
+            font-family: 'Hina Mincho', serif;
+            padding-top: 5px;
+        }
+
+
     </style>
 
 
 </head>
 <body>
-    <h1 >Some flowers for Maklum</h1>
+    <h1 class="main-heading">Flowers Album</h1>
+    <h4 class="sub-heading"><em>“Love is the flower you’ve got to let grow.” - John Lennon</em></h4>
     <section>
         
         <div class="photo-album">
@@ -114,7 +174,6 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reiciendis eum id nemo eius expedita ipsum sunt. Voluptatibus, maiores cumque tenetur deserunt voluptatem molestias eveniet dolor nulla repellat, ad unde!</p>
                 </div>
             </div>
-
             <div class="photo-frame">
                 <div class="photo">
                     <img src="images/n-rose-3.jpg" alt="">
@@ -181,5 +240,12 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer">
+            <h2><span class="orange-color">Flowers</span> Album</h2>
+            <p>Life is the flower for which love is the honey.</p>
+        </div>
+    </footer>
 </body>
 </html>
